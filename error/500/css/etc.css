@@ -1,0 +1,88 @@
+@charset 'UTF-8';
+
+/* */
+
+.red {background:rgb(255, 226, 231)!important;}
+
+/* content */
+.etc{ width:100%; padding:0 0 150px; }
+.etc .tour_tit{ margin: 0 auto 60px; text-align: center; padding: 80px 0 0; }
+.etc .tour_tit p span.point_tx{ color:  #1B9C9E; }
+
+/* 시스템 점검 중 & 에러 페이지*/
+.system_error {
+	position: fixed;
+	top: 50%;
+	left: 50%;
+	width: 1196px;
+	transform: translate(-50%,-54%);
+}
+.system_error .se_message,
+.system_error .se_visual {
+	display: inline-block;
+	vertical-align: middle;
+}
+.system_error .se_message {
+	width: 570px;
+	margin-right: 121px;
+}
+.system_error .se_message h1 {
+	line-height: 1;
+	font-size: 1px;
+	margin-bottom: 50px;
+}
+.system_error .se_message h2 {
+	margin-bottom: 30px;
+	font-weight: bold;
+	font-size: 40px;
+	line-height: 50px;
+	color: #1B9C9E;
+}
+.system_error .se_message p.content {
+	font-size: 18px;
+	line-height: 30px;
+	margin-bottom: 60px;
+}
+.system_error .se_message .btn_home a {
+	display: inline-block;
+	padding: 15px 35px;
+	border-radius: 100px;
+	font-weight: bold;
+	font-size: 16px;
+	line-height: 30px;
+	color: white;
+	background-color: #1B9C9E;
+}
+.system_error .se_message .btn_home a:after {
+	content: '';
+	display: inline-block;
+	width: 8px;
+	height: 12px;
+	margin-left: 10px;
+	background: url(../images/template/bullet_arrow_w.png) no-repeat left top;
+}
+.system_error .se_visual {
+	width: 500px;
+	line-height: 1;
+}
+
+
+.housing_search p.movinginfo_note {
+    margin: -30px 0px 50px;
+    padding-left: 30px;
+    font-size: 15px;
+    color: #444444;
+    line-height: 25px;
+    background: url(../images/template/ico_explain.png) no-repeat left 3px;
+}
+
+
+@media (max-width: 1440px) { 
+
+	.housing_wrap {width:1200px}
+	.housing_wrap .content_area { padding:0 }
+	.housing_wrap .content_area .map_wrap .list_area .apt_list { width: 520px; margin-right:30px; }
+	table.sel_area { width:461px;}	
+	.housing_wrap .content_area .map_wrap .list_area .select_area { width: 517px; }
+ 	.housing_wrap .content_area .map_wrap .list_area .apt_list li a { width:150px;}
+	 }

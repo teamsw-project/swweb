@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="ko" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta name="viewport" content="width=1440,initial-scale=1.0" />
+<title>새로운 웹사이트로 이동해 주세요.</title>
+<link rel="stylesheet" href="./css/base.css" />
+<link rel="stylesheet" href="./css/etc.css" />
+</head>
+<body>
+	<div class="system_error">
+		<div class="se_message">
+			<h1><img height="90px" src="./images/layout/logo_h.png" alt="사이트 로고" /></h1> <!-- ./images/layout/logo_h.png에 로고를 넣어주세요 -->
+			<h2>새로운 웹사이트로 이동해 주세요.</h2>
+			<p class="content">
+				이용에 불편을 드려 죄송합니다.<br />
+				보다 나은 서비스를 제공하기 위해 새로운 홈페이지를 제작했습니다.<br />
+				아래 '새로운 웹페이지 바로가기' 버튼으로 새로운 웹페이지를 만나 보세요!
+			</p>
+			<div class="btn_home">
+				<script>
+					var old_url = 'https://swproject.cf/old.html'
+				</script>
+				<a onclick="location.href = old_url" style="cursor: pointer;">구) 홈페이지 계속 이용하기</a>
+			</div><br />
+			<div class="btn_home">
+				<script>
+					var new_url = 'https://swproject.cf/index.html'
+				</script>
+				<a onclick="location.href = new_url" style="cursor: pointer;">새로운 웹페이지 바로가기</a>
+			</div>
+		</div>
+		<div class="se_visual">
+			<img src="./images/etc/photo_system_error.png" alt="공사중, 점검중 이미지" />
+		</div>
+	</div>
+	<script>
+		//윈도우 로드시 body 투명도 변경 및 배경색상 변경
+		window.onload = function() {
+			document.getElementsByTagName("body")[0].style.opacity = 1;
+			document.getElementsByTagName("body")[0].style.backgroundColor = "#F2F2F2";
+		}
+	</script>
+</body>
+</html>

@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="ko" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta name="viewport" content="width=1440,initial-scale=1.0" />
+<title>접근 제한 페이지의 세션이 만료되었습니다.</title>
+<link rel="stylesheet" href="http://swproject.cf/error/401/css/base.css" />
+<link rel="stylesheet" href="http://swproject.cf/error/401/css/etc.css" />
+</head>
+<body>
+	<div class="system_error">
+		<div class="se_message">
+			<h1><img height="90px" src="http://swproject.cf/error/401/images/layout/logo_h.png" alt="사이트 로고" /></h1> <!-- ./images/layout/logo_h.png에 로고를 넣어주세요 -->
+			<h2>접근 제한 페이지의 세션이 만료되었습니다.</h2>
+			<p class="content">
+				이용에 불편을 드려 죄송합니다.<br />
+				다시 사이트에 접속하여, 로그인 진행 부탁드립니다.
+			</p>
+			<div class="btn_home">
+				<script>
+					var main_url = '/index.html'
+				</script>
+				<a onclick="location.href = main_url" style="cursor: pointer;">메인 바로가기</a>
+			</div>
+            <!-- <div class="btn_home">
+				<script>
+					var github_id = 'teamsw-project' //여기에 깃허브 아이디 넣어주세요
+					var github_url = 'https://github.com/' + github_id
+				</script>
+				<a onclick="location.href = github_url" style="cursor: pointer;">개발자 깃허브 바로가기</a>
+			</div> -->
+		</div>
+		<div class="se_visual">
+			<img src="http://swproject.cf/error/401/images/etc/photo_system_error.png" alt="공사중, 점검중 이미지" />
+		</div>
+	</div>
+	<script>
+		//윈도우 로드시 body 투명도 변경 및 배경색상 변경
+		window.onload = function() {
+			document.getElementsByTagName("body")[0].style.opacity = 1;
+			document.getElementsByTagName("body")[0].style.backgroundColor = "#F2F2F2";
+		}
+	</script>
+</body>
+</html>
